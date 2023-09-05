@@ -4,3 +4,127 @@ body {
   margin: 0;
   background-color:	rgb(56,56,56);
 }
+
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  background-color: rgb(16,16,16);
+  color: white;
+}
+
+.navText {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.navMenu {
+  position: relative;
+  z-index: 100;
+}
+
+.navList {
+  margin: 0;
+  padding: 0 2rem;
+  list-style: none;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  width: 30vw;
+  height: 100vh;
+  background-color: rgb(24,24,24);
+  font-weight: 600;
+}
+
+.listItemFirst {
+  margin-top: 5rem;
+  width: 8rem;
+  height: 8rem;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.listImage {
+  height: 100%;
+  width: auto;
+  margin-left: -24px;
+}
+
+.listItem {
+  margin-bottom: 20px;
+}
+
+.counter {
+  background-color: red;
+  position: absolute;
+  top: 43vh;
+  left: 44vw;
+  border: 2px solid white;
+  border-radius: 1rem;
+  padding: .5rem 2rem;
+  font-size: xx-large;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 1024px) {
+
+  .navList {
+    width: 43vw;
+  }
+  .counter {
+    top: 43vh;
+    left: 42vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  .navList {
+    width: 50vw;
+  }
+  .counter {
+    top: 43vh;
+    left: 39vw;
+  }
+}
+
+@media screen and (max-width: 425px) {
+
+  .navList {
+    box-sizing: border-box;
+    width: 100vw;
+  }
+  .counter {
+    background-color: blue;
+    top: 43vh;
+    left: 29vw;
+  }
+}
+
+@media screen and (max-width: 375px) {
+
+  .navList {
+    box-sizing: border-box;
+    width: 100vw;
+  }
+  .counter {
+    background-color: blue;
+    top: 43vh;
+    left: 25vw;
+  }
+}
+
+@media screen and (max-width: 320px) {
+
+  .navList {
+    box-sizing: border-box;
+    width: 100vw;
+  }
+  .counter {
+    background-color: blue;
+    top: 43vh;
+    left: 20vw;
+  }
+}
